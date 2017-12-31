@@ -1,0 +1,126 @@
+##################################################################################
+### VENDOR_EDIT, OPPO All rights reserved.
+###
+### File: - init.oppo.rc
+### Author: jiangyg@PM
+###
+### ------------------------------- Revision History: ----------------------------
+### <author>                        <data>       <version>   <desc>
+### ------------------------------------------------------------------------------
+### jiangyg@PM                     2013-10-21                Create this file
+##################################################################################
+#ifdef VENDOR_EDIT
+#Haitao.Zhou@Prd.BaseDrv, 2017/02/16 Add for fingerprint compatibility
+import init.oppo.fingerprints.rc
+#endif
+
+#ifdef VENDOR_EDIT
+#zhunn@OnLineRD.AirService.RIL, 2015/1/28, Add for cdma card cannot send sms in Yiwu
+#WeiHong.Li@Mobile.Network, 2015/09/11, Add suid_dumpable to capture rild's tombstone according to case 02090380
+#Zhengpeng@OnLineRD.AirService.RIL, 2013/11/4, Add for create opponvitems dir
+#jindian.guan@Camera, 2017/02/23, Add for led calibration
+on boot
+	mkdir /data/opponvitems  0771 radio radio
+	mkdir /persist/camera 0777 system system
+	write /proc/sys/fs/suid_dumpable 1
+	setprop persist.radio.force_on_dc true
+#endif
+
+#ifdef VENDOR_EDIT
+#shiguang.han@Swdp.shanghai, 2017/5/23 Add for elsa
+on boot
+	chmod 0755 /dev/cpuctl
+	chmod 0755 /dev/cpuset
+	mkdir /dev/freezer
+	mount cgroup none /dev/freezer freezer
+	chown system system /dev/freezer
+	chmod 0755 /dev/freezer/
+
+        chown system system /dev/freezer/cgroup.procs
+        chmod 0666 /dev/freezer/cgroup.procs
+        chown system system /dev/freezer/tasks
+        chmod 0666 /dev/freezer/tasks
+
+        mkdir /dev/blkio
+        mount cgroup none /dev/blkio blkio
+        chown system system /dev/blkio
+        chmod 0755 /dev/blkio
+
+        chown system system /dev/blkio/cgroup.procs
+        chmod 0666 /dev/blkio/cgroup.procs
+        chown system system /dev/blkio/tasks
+        chmod 0666 /dev/blkio/tasks
+        chown system system /dev/blkio/blkio.weight
+        chmod 0666 /dev/blkio/blkio.weight
+        chown system system /dev/blkio/blkio.leaf_weight
+        chmod 0666 /dev/blkio/blkio.leaf_weight
+	chown system system /dev/blkio/blkio.throttle.read_bps_device
+	chmod 0666 /dev/blkio/blkio.throttle.read_bps_device
+	chown system system /dev/blkio/blkio.throttle.write_bps_device
+	chmod 0666 /dev/blkio/blkio.throttle.write_bps_device
+
+	chown system system /dev/cpuctl/cgroup.procs
+	chmod 0666 /dev/cpuctl/cgroup.procs
+	chown system system /dev/cpuctl/cgroup.procs.nort
+	chmod 0666 /dev/cpuctl/cgroup.procs.nort
+	chown system system /dev/cpuctl/bg_non_interactive/cgroup.procs
+	chmod 0666 /dev/cpuctl/bg_non_interactive/cgroup.procs
+	chown system system /dev/cpuctl/bg_non_interactive/cgroup.procs.nort
+	chmod 0666 /dev/cpuctl/bg_non_interactive/cgroup.procs.nort
+
+	chown system system /dev/cpuset/cgroup.procs
+	chown system system /dev/cpuset/foreground/cgroup.procs
+	chown system system /dev/cpuset/foreground/boost/cgroup.procs
+	chown system system /dev/cpuset/background/cgroup.procs
+	chown system system /dev/cpuset/system-background/cgroup.procs
+	chown system system /dev/cpuset/top-app/cgroup.procs
+
+	chmod 0666 /dev/cpuset/foreground/cgroup.procs
+	chmod 0666 /dev/cpuset/foreground/boost/cgroup.procs
+	chmod 0666 /dev/cpuset/background/cgroup.procs
+	chmod 0666 /dev/cpuset/system-background/cgroup.procs
+	chmod 0666 /dev/cpuset/top-app/cgroup.procs
+	chmod 0666 /dev/cpuset/cgroup.procs
+
+	chown system system /dev/stune/background/cgroup.procs
+	chown system system /dev/stune/top-app/cgroup.procs
+	chmod 0666 /dev/stune/background/cgroup.procs
+	chmod 0666 /dev/stune/top-app/cgroup.procs
+#endif
+
+#ifdef VENDOR_EDIT
+#Jianfeng.Qiu@MultiMedia.AudioDriver.SmartPA, 2017/03/11, Add for smartpa calibrate
+on boot
+    mkdir /persist/media 0775 media media
+#endif
+
+#ifdef VENDOR_EDIT
+#Wei.Wang@Swdp.Android.Storage, 2016/06/30, add for support /storage/sdcard0
+on post-fs-data
+  symlink /storage/self/primary /storage/sdcard0
+#endif
+
+#ifdef VENDOR_EDIT
+#Jiemin.Zhu@PSW.Android.Performance.Memory, 2017/07/25, Add for separate direct reclaim from kswapd
+  write /proc/sys/vm/vfs_direct_cache_pressure 10
+#endif /* VENDOR_EDIT */
+
+#ifdef VENDOR_EDIT
+#yh@bsp 2017/04/19, add for large file copy speed optimization
+	write /proc/sys/vm/dirty_ratio 21
+#endif
+
+#ifdef VENDOR_EDIT
+#fangpan@Swdp.shanghai, 2015/12/20, enable the procmod.ko when boot up
+on property:persist.sys.procmon_enable=1
+    insmod /system/lib/modules/procmon.ko -f
+    chown root system /sys/module/procmon/parameters/cpuload_thresh
+    chown root system /sys/module/procmon/parameters/io_thresh
+    chown root system /sys/module/procmon/parameters/mem_thresh
+    chown root system /sys/module/procmon/parameters/binder_thresh
+    chown root system /sys/module/procmon/parameters/trigger_time
+    chown root system /sys/module/procmon/parameters/enable
+# endif /* VENDOR_EDIT */
+
+on boot
+	write /sys/class/power_supply/usb/otg_switch 1

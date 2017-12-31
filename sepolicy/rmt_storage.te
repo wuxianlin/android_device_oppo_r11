@@ -1,0 +1,1 @@
+allow rmt_storage mdmreason_device:chr_file { read open };

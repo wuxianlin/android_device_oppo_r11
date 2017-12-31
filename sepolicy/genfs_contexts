@@ -1,0 +1,22 @@
+genfscon proc /qcom_flash u:object_r:cam_proc:s0
+genfscon proc /touchpanel u:object_r:proc_touchpanel:s0
+
+genfscon proc /rear_eeprom_info u:object_r:proc_eeprom_info:s0
+genfscon proc /rear2_eeprom_info u:object_r:proc_eeprom_info:s0
+genfscon proc /front_eeprom_info u:object_r:proc_eeprom_info:s0
+
+genfscon proc /rear_lens_id u:object_r:proc_lens_id:s0
+genfscon proc /rear2_lens_id u:object_r:proc_lens_id:s0
+genfscon proc /front_lens_id u:object_r:proc_lens_id:s0
+
+genfscon proc /rear_sensor_id u:object_r:proc_sensor_id:s0
+genfscon proc /rear2_sensor_id u:object_r:proc_sensor_id:s0
+genfscon proc /front_sensor_id u:object_r:proc_sensor_id:s0
+
+genfscon proc /rear_vcm_id u:object_r:proc_vcm_info:s0
+genfscon proc /rear_vcm_info u:object_r:proc_vcm_info:s0
+genfscon proc /rear2_vcm_info u:object_r:proc_vcm_info:s0
+genfscon proc /front_vcm_info u:object_r:proc_vcm_info:s0
+
+genfscon proc /devinfo/r2_camera u:object_r:proc_devinfo_r2_camera:s0
+genfscon proc /devinfo/lcd u:object_r:proc_devinfo_lcd:s0

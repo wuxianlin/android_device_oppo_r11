@@ -1,0 +1,8 @@
+allow cameraserver proc_eeprom_info:file { read open };
+allow cameraserver proc_vcm_info:file { read open };
+allow cameraserver proc_lens_id:file { read open };
+allow cameraserver proc_sensor_id:file { read open };
+allow cameraserver proc_devinfo_r2_camera:file { read open };
+allow cameraserver proc_devinfo_lcd:file { read open };
+allow cameraserver cam_proc:file { read write open };
+allow cameraserver oppo_prop:file { read open getattr };

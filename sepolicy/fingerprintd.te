@@ -1,0 +1,5 @@
+allow fingerprintd oppo_prop:file { read open getattr };
+allow fingerprintd uhid_device:chr_file { open write ioctl };
+allow fingerprintd sysfs:file { write };
+allow fingerprintd init:unix_stream_socket { connectto };
+allow fingerprintd tee_device:chr_file { read open write ioctl };

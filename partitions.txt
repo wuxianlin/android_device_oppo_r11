@@ -1,0 +1,163 @@
+wuxianlin@ubuntu:~/android/cm-14.1/device/oppo/r11$ adb shell su -c "ls -l /dev/block/bootdevice/by-name"
+total 0
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 DRIVER -> /dev/block/mmcblk0p61
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 LOGO -> /dev/block/mmcblk0p60
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 abl -> /dev/block/mmcblk0p36
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 ablbak -> /dev/block/mmcblk0p37
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 apdp -> /dev/block/mmcblk0p40
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 bluetooth -> /dev/block/mmcblk0p49
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 bluetoothbak -> /dev/block/mmcblk0p50
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 boot -> /dev/block/mmcblk0p21 65536x1024=67108864
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 bootbak -> /dev/block/mmcblk0p22 65536x1024=67108864
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 cache -> /dev/block/mmcblk0p65 262144x1024=268435456
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 cmnlib -> /dev/block/mmcblk0p26
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 cmnlib64 -> /dev/block/mmcblk0p27
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 cmnlib64bak -> /dev/block/mmcblk0p29
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 cmnlibbak -> /dev/block/mmcblk0p28
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 ddr -> /dev/block/mmcblk0p47
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 devcfg -> /dev/block/mmcblk0p55
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 devcfgbak -> /dev/block/mmcblk0p56
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 devinfo -> /dev/block/mmcblk0p39
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 dip -> /dev/block/mmcblk0p38
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 dpo -> /dev/block/mmcblk0p42
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 dsp -> /dev/block/mmcblk0p34
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 dspbak -> /dev/block/mmcblk0p35
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 frp -> /dev/block/mmcblk0p57
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 fsc -> /dev/block/mmcblk0p51
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 fsg -> /dev/block/mmcblk0p20
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 hyp -> /dev/block/mmcblk0p16
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 hypbak -> /dev/block/mmcblk0p17
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 keymaster -> /dev/block/mmcblk0p24
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 keymasterbak -> /dev/block/mmcblk0p25
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 keystore -> /dev/block/mmcblk0p54
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 limits -> /dev/block/mmcblk0p44
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 logdump -> /dev/block/mmcblk0p58
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 logfs -> /dev/block/mmcblk0p46
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 mdtp -> /dev/block/mmcblk0p32
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 mdtpbak -> /dev/block/mmcblk0p33
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 mdtpsecapp -> /dev/block/mmcblk0p30
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 mdtpsecappbak -> /dev/block/mmcblk0p31
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 misc -> /dev/block/mmcblk0p53
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 modem -> /dev/block/mmcblk0p64
+lrwxrwxrwx 1 root root 20 1970-07-22 15:53 modemst1 -> /dev/block/mmcblk0p3
+lrwxrwxrwx 1 root root 20 1970-07-22 15:53 modemst2 -> /dev/block/mmcblk0p4
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 msadp -> /dev/block/mmcblk0p41
+lrwxrwxrwx 1 root root 20 1970-07-22 15:53 oppodycnvbk -> /dev/block/mmcblk0p1
+lrwxrwxrwx 1 root root 20 1970-07-22 15:53 oppostanvbk -> /dev/block/mmcblk0p2
+lrwxrwxrwx 1 root root 20 1970-07-22 15:53 persist -> /dev/block/mmcblk0p5
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 pmic -> /dev/block/mmcblk0p18
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 pmicbak -> /dev/block/mmcblk0p19
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 recovery -> /dev/block/mmcblk0p23 65536x1024=67108864
+lrwxrwxrwx 1 root root 20 1970-07-22 15:53 reserve1 -> /dev/block/mmcblk0p6
+lrwxrwxrwx 1 root root 20 1970-07-22 15:53 reserve2 -> /dev/block/mmcblk0p7
+lrwxrwxrwx 1 root root 20 1970-07-22 15:53 reserve3 -> /dev/block/mmcblk0p8
+lrwxrwxrwx 1 root root 20 1970-07-22 15:53 reserve4 -> /dev/block/mmcblk0p9
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 rpm -> /dev/block/mmcblk0p14
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 rpmbak -> /dev/block/mmcblk0p15
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 sec -> /dev/block/mmcblk0p48
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 splash -> /dev/block/mmcblk0p43
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 ssd -> /dev/block/mmcblk0p52
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 sti -> /dev/block/mmcblk0p59
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 storsec -> /dev/block/mmcblk0p68
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 system -> /dev/block/mmcblk0p66 3399680x1024=3481272320
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 toolsfv -> /dev/block/mmcblk0p45
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 tz -> /dev/block/mmcblk0p12
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 tzbak -> /dev/block/mmcblk0p13
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 userdata -> /dev/block/mmcblk0p69 55599087x1024=5692505088
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 vbmeta -> /dev/block/mmcblk0p62
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 vbmetabak -> /dev/block/mmcblk0p63
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 vendor -> /dev/block/mmcblk0p67 1048576x1024=1073741824
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 xbl -> /dev/block/mmcblk0p10
+lrwxrwxrwx 1 root root 21 1970-07-22 15:53 xblbak -> /dev/block/mmcblk0p11
+wuxianlin@ubuntu:~/android/cm-14.1/device/oppo/r11$ adb shell cat /proc/partitions
+major minor  #blocks  name
+
+   1        0       8192 ram0
+   1        1       8192 ram1
+   1        2       8192 ram2
+   1        3       8192 ram3
+   1        4       8192 ram4
+   1        5       8192 ram5
+   1        6       8192 ram6
+   1        7       8192 ram7
+   1        8       8192 ram8
+   1        9       8192 ram9
+   1       10       8192 ram10
+   1       11       8192 ram11
+   1       12       8192 ram12
+   1       13       8192 ram13
+   1       14       8192 ram14
+   1       15       8192 ram15
+   7        0      98304 loop0
+ 253        0    2097152 zram0
+ 179        0   61071360 mmcblk0
+ 179        1      10240 mmcblk0p1
+ 179        2      10240 mmcblk0p2
+ 179        3       2048 mmcblk0p3
+ 179        4       2048 mmcblk0p4
+ 179        5      32768 mmcblk0p5
+ 179        6       2048 mmcblk0p6
+ 179        7      16384 mmcblk0p7
+ 179        8       2048 mmcblk0p8
+ 179        9      16384 mmcblk0p9
+ 179       10       3584 mmcblk0p10
+ 179       11       3584 mmcblk0p11
+ 179       12       4096 mmcblk0p12
+ 179       13       4096 mmcblk0p13
+ 179       14        512 mmcblk0p14
+ 179       15        512 mmcblk0p15
+ 179       16        512 mmcblk0p16
+ 179       17        512 mmcblk0p17
+ 179       18        512 mmcblk0p18
+ 179       19        512 mmcblk0p19
+ 179       20       2048 mmcblk0p20
+ 179       21      65536 mmcblk0p21
+ 179       22      65536 mmcblk0p22
+ 179       23      65536 mmcblk0p23
+ 179       24       1024 mmcblk0p24
+ 179       25       1024 mmcblk0p25
+ 179       26       1024 mmcblk0p26
+ 179       27       1024 mmcblk0p27
+ 179       28       1024 mmcblk0p28
+ 179       29       1024 mmcblk0p29
+ 179       30       4096 mmcblk0p30
+ 179       31       4096 mmcblk0p31
+ 259        0      32768 mmcblk0p32
+ 259        1      32768 mmcblk0p33
+ 259        2      16384 mmcblk0p34
+ 259        3      16384 mmcblk0p35
+ 259        4       1024 mmcblk0p36
+ 259        5       1024 mmcblk0p37
+ 259        6       1024 mmcblk0p38
+ 259        7          1 mmcblk0p39
+ 259        8        256 mmcblk0p40
+ 259        9        256 mmcblk0p41
+ 259       10          1 mmcblk0p42
+ 259       11      33424 mmcblk0p43
+ 259       12          4 mmcblk0p44
+ 259       13       1024 mmcblk0p45
+ 259       14       8192 mmcblk0p46
+ 259       15       1024 mmcblk0p47
+ 259       16         16 mmcblk0p48
+ 259       17       1024 mmcblk0p49
+ 259       18       1024 mmcblk0p50
+ 259       19          1 mmcblk0p51
+ 259       20          8 mmcblk0p52
+ 259       21       1024 mmcblk0p53
+ 259       22        512 mmcblk0p54
+ 259       23       1024 mmcblk0p55
+ 259       24       1024 mmcblk0p56
+ 259       25        512 mmcblk0p57
+ 259       26      65536 mmcblk0p58
+ 259       27       2048 mmcblk0p59
+ 259       28      16384 mmcblk0p60
+ 259       29      32768 mmcblk0p61
+ 259       30         64 mmcblk0p62
+ 259       31         64 mmcblk0p63
+ 259       32     131072 mmcblk0p64
+ 259       33     262144 mmcblk0p65
+ 259       34    3399680 mmcblk0p66
+ 259       35    1048576 mmcblk0p67
+ 259       36        128 mmcblk0p68
+ 259       37   55599087 mmcblk0p69
+ 179       32       4096 mmcblk0rpmb

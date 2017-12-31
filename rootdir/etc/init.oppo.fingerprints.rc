@@ -1,0 +1,13 @@
+on boot
+    mkdir /persist/rpmb_status
+    chmod 0777 /persist/rpmb_status
+
+service alipayservice /system/bin/alipayservice
+    class late_start
+    user system
+    group system
+
+service fpc1020_sh /system/bin/sh /init.oppo.fingerprints.sh
+    class main
+    user root
+    oneshot

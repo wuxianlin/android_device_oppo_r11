@@ -1,0 +1,8 @@
+# We have a couple of non-standard NV partitions
+/dev/block/bootdevice/by-name/oppodycnvbk                       u:object_r:modem_efs_partition_device:s0
+/dev/block/bootdevice/by-name/oppostanvbk                       u:object_r:modem_efs_partition_device:s0
+
+/dev/mdmreason	u:object_r:mdmreason_device:s0
+
+#Haitao.Zhou@BSP.Fingerprint.Payment, 2016/10/01, add for alipay service
+/system/bin/alipayservice	u:object_r:alipayservice_exec:s0
