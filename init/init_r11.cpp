@@ -125,6 +125,7 @@ void vendor_load_properties() {
                 property_set("ro.rf_version", "TDD_FDD_Ch_16052");
             }
             property_set("ro.audio.customplatform", "16051");
+            property_set("ro.power_profile.override", "zzz_power_profile_16051");
             property_set("ro.qualcomm.foss", "1");
             property_set("ro.qualcomm.display.paneltype", "1");
             property_set("config.foss.xml", "1");
@@ -149,6 +150,7 @@ void vendor_load_properties() {
                 property_set("ro.rf_version", "TDD_FDD_Ch_16102");
             }
             property_set("ro.audio.customplatform", "16103");
+            property_set("ro.power_profile.override", "zzz_power_profile_16103");
             property_set("ro.qualcomm.foss", "0");
             property_set("ro.qualcomm.display.paneltype", "0");
             property_set("persist.extend.brightness", "1");
@@ -173,6 +175,7 @@ void vendor_load_properties() {
                 property_set("ro.rf_version", "TDD_FDD_Ch_16102");
             }
             property_set("ro.audio.customplatform", "16118");
+            property_set("ro.power_profile.override", "zzz_power_profile_16118");
             property_set("ro.qualcomm.foss", "1");
             property_set("ro.qualcomm.display.paneltype", "1");
             property_set("config.foss.xml", "1");
